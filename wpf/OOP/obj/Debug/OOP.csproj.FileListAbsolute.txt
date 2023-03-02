@@ -1,0 +1,8 @@
+D:\DMX_Control_Light_Project\versiyom\OOP\bin\Debug\OOP.exe.config
+D:\DMX_Control_Light_Project\versiyom\OOP\bin\Debug\OOP.exe
+D:\DMX_Control_Light_Project\versiyom\OOP\bin\Debug\OOP.pdb
+D:\DMX_Control_Light_Project\versiyom\OOP\obj\Debug\OOP.csproj.AssemblyReference.cache
+D:\DMX_Control_Light_Project\versiyom\OOP\obj\Debug\OOP.csproj.SuggestedBindingRedirects.cache
+D:\DMX_Control_Light_Project\versiyom\OOP\obj\Debug\OOP.csproj.CoreCompileInputs.cache
+D:\DMX_Control_Light_Project\versiyom\OOP\obj\Debug\OOP.exe
+D:\DMX_Control_Light_Project\versiyom\OOP\obj\Debug\OOP.pdb

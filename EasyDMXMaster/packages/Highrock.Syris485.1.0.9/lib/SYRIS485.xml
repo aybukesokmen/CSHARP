@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SYRIS485</name>
+    </assembly>
+    <members>
+        <member name="T:SYRIS485.CardArgs">
+            <summary>
+            Defines the <see cref="T:SYRIS485.CardArgs" />
+            </summary>
+        </member>
+        <member name="P:SYRIS485.CardArgs.CardNum">
+            <summary>
+            Gets or sets the CardNum
+            </summary>
+        </member>
+        <member name="P:SYRIS485.CardArgs.SiteNumber">
+            <summary>
+            Gets or sets the SiteNumber
+            </summary>
+        </member>
+        <member name="T:SYRIS485.Function">
+            <summary>
+            通讯功能码
+            </summary>
+        </member>
+        <member name="F:SYRIS485.Function.GetModuleFactoryCode">
+            <summary>
+            Defines the GetModuleFactoryCode
+            </summary>
+        </member>
+        <member name="F:SYRIS485.Function.SetModuleIDCode">
+            <summary>
+            Defines the SetModuleIDCode
+            </summary>
+        </member>
+        <member name="F:SYRIS485.Function.GetModuleIDCode">
+            <summary>
+            Defines the GetModuleIDCode
+            </summary>
+        </member>
+        <member name="F:SYRIS485.Function.ReadCardData">
+            <summary>
+            Defines the ReadCardData
+            </summary>
+        </member>
+        <member name="F:SYRIS485.Function.ReReadCardData">
+            <summary>
+            Defines the ReReadCardData
+            </summary>
+        </member>
+        <member name="T:SYRIS485.ModuleArgs">
+            <summary>
+            Defines the <see cref="T:SYRIS485.ModuleArgs" />
+            </summary>
+        </member>
+        <member name="P:SYRIS485.ModuleArgs.CardFactoryCode">
+            <summary>
+            Gets or sets the CardFactoryCode
+            </summary>
+        </member>
+        <member name="P:SYRIS485.ModuleArgs.SiteNumber">
+            <summary>
+            Gets or sets the SiteNumber
+            </summary>
+        </member>
+        <member name="T:SYRIS485.Protocol">
+            <summary>
+            卡片阅读机模块（Reader Module）的通讯协议
+            </summary>
+        </member>
+        <member name="M:SYRIS485.Protocol.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SYRIS485.Protocol"/> class.
+            </summary>
+        </member>
+        <member name="M:SYRIS485.Protocol.#ctor(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            Initializes a new instance of the <see cref="T:SYRIS485.Protocol"/> class.
+            </summary>
+            <param name="message">The message<see /></param>
+        </member>
+        <member name="P:SYRIS485.Protocol.Bcc1">
+            <summary>
+            Gets or sets the Bcc1
+            </summary>
+        </member>
+        <member name="P:SYRIS485.Protocol.Bcc2">
+            <summary>
+            Gets or sets the Bcc2
+            </summary>
+        </member>
+        <member name="P:SYRIS485.Protocol.Data">
+            <summary>
+            Gets or sets the Data
+            </summary>
+        </member>
+        <member name="P:SYRIS485.Protocol.End">
+            <summary>
+            Gets or sets the End
+            </summary>
+        </member>
+        <member name="P:SYRIS485.Protocol.Fc">
+            <summary>
+            Gets or sets the Fc
+            </summary>
+        </member>
+        <member name="P:SYRIS485.Protocol.FC">
+            <summary>
+            Gets or sets the FC
+            </summary>
+        </member>
+        <member name="P:SYRIS485.Protocol.Id">
+            <summary>
+            Gets or sets the Id
+            </summary>
+        </member>
+        <member name="P:SYRIS485.Protocol.ID">
+            <summary>
+            Gets or sets the ID
+            </summary>
+        </member>
+        <member name="P:SYRIS485.Protocol.SData">
+            <summary>
+            Gets or sets the SData
+            </summary>
+        </member>
+        <member name="P:SYRIS485.Protocol.Soh">
+            <summary>
+            Gets or sets the Soh
+            </summary>
+        </member>
+        <member name="P:SYRIS485.Protocol.Type">
+            <summary>
+            Gets or sets the Type
+            </summary>
+        </member>
+        <member name="M:SYRIS485.Protocol.GetModuleFactoryCode(System.Int32)">
+            <summary>
+            读取卡片阅读机模块出厂序号
+            </summary>
+            <param name="moduleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SYRIS485.Protocol.GetModuleIDCode(System.String)">
+            <summary>
+            读取模块地址编号
+            </summary>
+            <param name="serialNumber">模块出厂序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SYRIS485.Protocol.ReadCardData(System.Int32)">
+            <summary>
+            读取卡片阅读机所读到之卡片资料
+            </summary>
+            <param name="moduleId">地址编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SYRIS485.Protocol.ReReadCardData(System.Int32)">
+            <summary>
+            重新读取卡片资料
+            </summary>
+            <param name="moduleId">地址编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SYRIS485.Protocol.SetModuleIDCode(System.String,System.Int32)">
+            <summary>
+            为卡片阅读机设定地址编号
+            </summary>
+            <param name="serialNumber">模块出厂序号</param>
+            <param name="moduleId">地址编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SYRIS485.Protocol.GetSendBytes">
+            <summary>
+            获取发送的数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SYRIS485.Protocol.CalcBcc">
+            <summary>
+            计算检验码
+            </summary>
+        </member>
+        <member name="T:SYRIS485.SYRIS">
+            <summary>
+            Defines the <see cref="T:SYRIS485.SYRIS" />
+            </summary>
+        </member>
+        <member name="F:SYRIS485.SYRIS.ReaderSites">
+            <summary>
+            Defines the ReaderSites
+            </summary>
+        </member>
+        <member name="F:SYRIS485.SYRIS.lockObj">
+            <summary>
+            Defines the lockObj
+            </summary>
+        </member>
+        <member name="F:SYRIS485.SYRIS.rd">
+            <summary>
+            Defines the rd
+            </summary>
+        </member>
+        <member name="F:SYRIS485.SYRIS.serialPort">
+            <summary>
+            Defines the serialPort
+            </summary>
+        </member>
+        <member name="M:SYRIS485.SYRIS.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SYRIS485.SYRIS"/> class.
+            </summary>
+            <param name="portName">The portName<see cref="T:System.String"/></param>
+        </member>
+        <member name="E:SYRIS485.SYRIS.OnCardIn">
+            <summary>
+            Defines the OnCardIn
+            </summary>
+        </member>
+        <member name="E:SYRIS485.SYRIS.OnCardOut">
+            <summary>
+            Defines the OnCardOut
+            </summary>
+        </member>
+        <member name="E:SYRIS485.SYRIS.OnGetModuleFactoryCode">
+            <summary>
+            Defines the OnGetModuleFactoryCode
+            </summary>
+        </member>
+        <member name="E:SYRIS485.SYRIS.OnGetModuleID">
+            <summary>
+            Defines the OnGetModuleID
+            </summary>
+        </member>
+        <member name="E:SYRIS485.SYRIS.OnSetModuleID">
+            <summary>
+            Defines the OnSetModuleID
+            </summary>
+        </member>
+        <member name="P:SYRIS485.SYRIS.WaitBeforeSend">
+            <summary>
+            Gets or sets the WaitBeforeSend
+            </summary>
+        </member>
+        <member name="M:SYRIS485.SYRIS.ClearCardPool">
+            <summary>
+            The ClearCardPool
+            </summary>
+        </member>
+        <member name="M:SYRIS485.SYRIS.Dispose">
+            <summary>
+            The Dispose
+            </summary>
+        </member>
+        <member name="M:SYRIS485.SYRIS.GetModuleFactoryCode(System.Int32)">
+            <summary>
+            读取卡片阅读机模块出厂序号
+            </summary>
+            <param name="moduleId">地址编号</param>
+        </member>
+        <member name="M:SYRIS485.SYRIS.GetModuleIDCode(System.String)">
+            <summary>
+            读取卡片阅读机地址编号
+            </summary>
+            <param name="serialNumber">模块出厂序号</param>
+        </member>
+        <member name="M:SYRIS485.SYRIS.ReadCardData(System.Int32)">
+            <summary>
+            读取卡片阅读机所读到之卡片资料
+            </summary>
+            <param name="moduleId">地址编号</param>
+        </member>
+        <member name="M:SYRIS485.SYRIS.ReReadCardData(System.Int32)">
+            <summary>
+            重新读取卡片资料
+            </summary>
+            <param name="moduleId">地址编号</param>
+        </member>
+        <member name="M:SYRIS485.SYRIS.SetModuleIDCode(System.String,System.Int32)">
+            <summary>
+            设置卡片阅读机地址编号
+            </summary>
+            <param name="serialNumber"></param>
+            <param name="moduleId"></param>
+        </member>
+        <member name="M:SYRIS485.SYRIS.SerialPort_DataReceived(System.Object,System.IO.Ports.SerialDataReceivedEventArgs)">
+            <summary>
+            The SerialPort_DataReceived
+            </summary>
+            <param name="sender">The sender<see cref="T:System.Object"/></param>
+            <param name="e">The e<see cref="T:System.IO.Ports.SerialDataReceivedEventArgs"/></param>
+        </member>
+        <member name="M:SYRIS485.SYRIS.SerialPort_ErrorReceived(System.Object,System.IO.Ports.SerialErrorReceivedEventArgs)">
+            <summary>
+            The SerialPort_ErrorReceived
+            </summary>
+            <param name="sender">The sender<see cref="T:System.Object"/></param>
+            <param name="e">The e<see cref="T:System.IO.Ports.SerialErrorReceivedEventArgs"/></param>
+        </member>
+        <member name="M:SYRIS485.SYRIS.SerialPort_PinChanged(System.Object,System.IO.Ports.SerialPinChangedEventArgs)">
+            <summary>
+            The SerialPort_PinChanged
+            </summary>
+            <param name="sender">The sender<see cref="T:System.Object"/></param>
+            <param name="e">The e<see cref="T:System.IO.Ports.SerialPinChangedEventArgs"/></param>
+        </member>
+        <member name="M:SYRIS485.SYRIS.WaitCanWrite">
+            <summary>
+            The WaitCanWrite
+            </summary>
+        </member>
+    </members>
+</doc>

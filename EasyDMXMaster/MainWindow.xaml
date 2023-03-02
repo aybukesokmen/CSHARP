@@ -1,0 +1,891 @@
+﻿<Window x:Class="dmx_control.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:local="clr-namespace:dmx_control"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="477*"/>
+            <ColumnDefinition Width="323*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="10*"/>
+
+        </Grid.RowDefinitions>
+
+
+        <Grid x:Name="panel_renk" Grid.Row="0" IsEnabled="False" Grid.ColumnSpan="2">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="FPSmeter" Content="."   Background="Black" Foreground="#FF40C542" FontFamily="Arial Black" Grid.Column="2" />
+            <Image x:Name="img1" Source="/easy_dmx_master_v3.png" Grid.Row="0" Grid.Column="1" Stretch="Fill" />
+
+
+
+        </Grid>
+
+        <Grid Grid.ColumnSpan="2" Margin="0,72,0,0" Grid.RowSpan="2">
+            <TabControl RenderTransformOrigin="0.451,0.493" OpacityMask="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Background="#FFB55D5D" BorderBrush="#FFBFB8B8" Foreground="#FF482C2C">
+                <TabItem Header="RENKLER">
+                    <Grid RenderTransformOrigin="0.587,0.45" OpacityMask="#FF843C3C">
+                        <Grid.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF0E0B0B"/>
+                                <GradientStop Color="#FFBBA9A9" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="12*"/>
+
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="1*"/>
+
+                            <ColumnDefinition Width="45*"/>
+
+                        </Grid.ColumnDefinitions>
+
+
+                        <Grid Grid.Row="1" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="5*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+
+
+
+
+                            <Grid Grid.Column="4" Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="12*"/>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="5*"/>
+                                    <RowDefinition Height="6*"/>
+                                    <RowDefinition Height="10*"/>
+
+                                    <RowDefinition Height="1*"/>
+
+                                </Grid.RowDefinitions>
+
+
+
+                                <GroupBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="5">
+                                    <GroupBox.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FF5D4444"/>
+                                            <GradientStop Color="White" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </GroupBox.Background>
+                                </GroupBox>
+                                <Label Grid.Row="1" Grid.Column="1" Content="Pixel No" FontSize="10" Foreground="White" FontFamily="Segoe UI Black"/>
+                                <Slider x:Name="slider_pixel" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" ValueChanged="slider_pixel_ValueChanged"/>
+                                <Button x:Name="btn_pixel_azat" Content="-" Grid.Row="3" Grid.Column="1" Click="btn_pixel_azat_Click"/>
+                                <Button x:Name="btn_pixel_Arttir" Content="+" Grid.Row="3" Grid.Column="3" Click="btn_pixel_Arttir_Click"/>
+                                <TextBox x:Name="txt_pixel" Text="0" Grid.Row="1" Grid.Column="2" TextChanged="txt_pixel_TextChanged"/>
+                                <Grid Grid.Row="3" Grid.Column="2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="5*"/>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="5*"/>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="5*"/>
+                                        <RowDefinition Height="1*"/>
+                                    </Grid.RowDefinitions>
+                                    <RadioButton x:Name="rdbtn_tek_kanal" Content="Tek Pixel" Grid.Row="1" Checked="rdbtn_tek_kanal_Checked"/>
+                                    <RadioButton x:Name="rdbtn_cift_kanal" Content="Hepsini yak" Grid.Row="3" Checked="rdbtn_cift_kanal_Checked"/>
+                                    <RadioButton x:Name="rdbtn_sira" Content="Sırası ile" Grid.Row="5" Checked="rdbtn_sira_Checked"/>
+                                </Grid>
+
+
+
+                            </Grid>
+
+
+                            <Grid Grid.Row="1" Grid.Column="1" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="15*"/>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="1*"/>
+
+                                    <ColumnDefinition/>
+
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition Height="1*"/>
+
+
+
+                                </Grid.RowDefinitions>
+
+                                <Label x:Name="lbl_parlaklik" Content="Parlaklık" Grid.Column="1" Grid.Row="1" FontSize="10" Background="#FF777171" Foreground="White" FontFamily="Segoe UI Black"/>
+                                <Slider x:Name="slider_parlaklik" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" ValueChanged="slider_parlaklik_ValueChanged" Foreground="Black" Background="{x:Null}" BorderBrush="Black"/>
+                                <TextBox x:Name="txt_parlaklik" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="1"/>
+
+
+
+                            </Grid>
+                            <Grid Grid.Row="1" Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="7*"/>
+                                    <RowDefinition Height="6*"/>
+                                    <RowDefinition Height="6*"/>
+                                    <RowDefinition Height="6*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="6*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="1*"/>
+
+                                </Grid.ColumnDefinitions>
+
+
+
+                                <GroupBox x:Name="grpbx_renk_gecis" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="8" Foreground="#FF2A9826" BorderBrush="#FF65A96D">
+                                    <GroupBox.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FF5D4444"/>
+                                            <GradientStop Color="#FFAFA4A4" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </GroupBox.Background>
+                                </GroupBox>
+                                <TextBox x:Name="txt_hiz" Grid.Row="2" Grid.Column="2"  Text="0" LostFocus="MAINfade_Change"/>
+                                <Label Content="Renk Geçiş Süresi" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" FontSize="10" FontFamily="Segoe UI Black" Foreground="White"/>
+
+                                <Slider x:Name="slider_gecis_Sure" ValueChanged="slider_gecis_Sure_ValueChanged" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Foreground="#FFE28787"/>
+                                <Button Content="0 ms" Grid.Row="4" Grid.Column="1" Click="hiz_button_Click" Tag="0"/>
+                                <Button Content="300 ms" Grid.Row="6" Grid.Column="1" Click="hiz_button_Click" Tag="300"/>
+                                <Button Content="1000 ms" Grid.Row="4" Grid.Column="3" Click="hiz_button_Click" Tag="1000"/>
+                                <Button Content="5000 ms" Grid.Row="6" Grid.Column="3" Click="hiz_button_Click" Tag="5000"/>
+
+
+
+
+                            </Grid>
+
+
+
+
+
+
+                        </Grid>
+
+
+                        <Grid Grid.Row="0" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="2*"/>
+
+
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="10*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="10*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="10*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="10*"/>
+                                <RowDefinition Height="1*"/>
+
+                            </Grid.RowDefinitions>
+
+                            <GroupBox x:Name="grpbx_rgb" Grid.Row="0" Grid.Column="7" Grid.ColumnSpan="7" Grid.RowSpan="9" BorderBrush="White" RenderTransformOrigin="0,0" Foreground="White" >
+                                <GroupBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF777171"/>
+                                        <GradientStop Color="#FFAFA4A4" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </GroupBox.Background>
+                            </GroupBox>
+
+                            <Button Grid.Column="8" Grid.Row="7" Click="Color_Click" Tag="Led,#FFFF0000" >
+                                <Grid>
+                                    <Ellipse  Fill="#FFFF0000"  />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="12" Grid.Row="7" Click="Color_Click" Tag="Led,#FF00FF00" Background="Lime">
+                                <Grid>
+                                    <Ellipse  Fill="#FF00FF00" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+
+                            <Button Grid.Column="10" Grid.Row="7" Click="Color_Click" Tag="Led,#FF0000FF">
+                                <Grid>
+                                    <Ellipse  Fill="#FF0000FF" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Slider x:Name="slider_r" Grid.Row="3" Grid.Column="8" Grid.RowSpan="3" ValueChanged="ColorSlider_ValueChanged"  Orientation="Vertical" HorizontalAlignment="Center"/>
+                            <Slider x:Name="slider_g" Grid.Row="3" Grid.Column="12" Grid.RowSpan="3" ValueChanged="ColorSlider_ValueChanged" Orientation="Vertical" HorizontalAlignment="Center"/>
+                            <Slider x:Name="slider_b" Grid.Row="3" Grid.Column="10" Grid.RowSpan="3"  ValueChanged="ColorSlider_ValueChanged" Orientation="Vertical" HorizontalAlignment="Center"/>
+                            <TextBox x:Name="txt_r" Grid.Row="1" Grid.Column="8"  TextChanged="txt_r_TextChanged"/>
+                            <TextBox x:Name="txt_g" Grid.Row="1" Grid.Column="12"  TextChanged="txt_g_TextChanged"/>
+                            <TextBox x:Name="txt_b" Grid.Row="1" Grid.Column="10"  TextChanged="txt_b_TextChanged"/>
+
+
+
+
+                            <!--Beyaz -->
+                            <Button Grid.Row="1" Grid.Column="1" Click="Color_Click" Tag="Led,#FFFFFF" Background="White" BorderBrush="Black">
+                                <Grid>
+                                    <Ellipse Fill="White"  />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <!-- SİYAH-->
+                            <Button  Grid.Column="1" Grid.Row="7" Click="Color_Click" Tag="Led,#FF000000" Background="Black">
+                                <Grid>
+                                    <Ellipse  Fill="Black"  />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <!-- -->
+                            <Button  Grid.Column="1" Grid.Row="2" Click="Color_Click" Tag="Led,#FFEF8074">
+                                <Grid/>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <!-- -->
+                            <Button  Grid.Column="17" Grid.Row="5" Click="Color_Click" Tag="Led,#FFFF00" Background="#FF941F1F">
+                                <Grid>
+                                    <Ellipse  Fill="#FFFFD200" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <!-- -->
+                            <Button  Grid.Column="19" Grid.Row="5" Click="Color_Click" Tag="Led,#FFFF00F6">
+                                <Grid>
+                                    <Ellipse  Fill="#FFFF00F6" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <!-- -->
+                            <Button Grid.Column="19" Grid.Row="7" Click="Color_Click" Tag="Led,#FFFF2762">
+                                <Grid>
+                                    <Ellipse  Fill="#FFFF2762" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+
+                            <!-- -->
+                            <Button Grid.Column="15" Grid.Row="7" Click="Color_Click" Tag="Led,#FF255208">
+                                <Grid>
+                                    <Ellipse  Fill="#FF255208" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <!-- -->
+                            <Button Grid.Column="5" Grid.Row="3" Background="#FF1F6786" Click="Color_Click" Tag="Led,#FF1F6786"  BorderBrush="#FF0F1061" Foreground="#FF0F1061">
+                                <Grid>
+                                    <Ellipse  Fill="#FF1F6786" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <!-- -->
+                            <Button Grid.Column="17" Grid.Row="7" Click="Color_Click"  Tag="Led,#FFFF9800">
+                                <Grid>
+                                    <Ellipse  Fill="#FFFF9800"/>
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+
+                            <!-- -->
+                            <Button Grid.Column="17" Grid.Row="1" Click="Color_Click" Tag="Led,#FFFEFF6E">
+                                <Grid>
+                                    <Ellipse  Fill="#FFFEFF6E" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="15" Grid.Row="1" Click="Color_Click" Tag="Led,#FFAEF13D">
+                                <Grid>
+                                    <Ellipse  Fill="#FFAEF13D" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="15" Grid.Row="3" Click="Color_Click" Tag="Led,#FF6DDA26">
+                                <Grid>
+                                    <Ellipse  Fill="#FF6DDA26" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="15" Grid.Row="5" Click="Color_Click" Tag="Led,#FF439A0A">
+                                <Grid>
+                                    <Ellipse  Fill="#FF439A0A" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="5" Grid.Row="1" Click="Color_Click" Tag="Led,#FF00FFBF" Background="#FF00FFBF">
+                                <Grid>
+                                    <Ellipse  Fill="#FF00FFBF"  />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+
+                            <Button Grid.Column="17" Grid.Row="3" Click="Color_Click" Tag="Led,#FFFFB55B">
+                                <Grid>
+                                    <Ellipse  Fill="#FFFFB55B" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="19" Grid.Row="1" Click="Color_Click" Tag="Led,#FFFFA5FC">
+                                <Grid>
+                                    <Ellipse  Fill="#FFFFA5FC" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="19" Grid.Row="3" Click="Color_Click" Tag="Led,#FFFF8AAA">
+                                <Grid>
+                                    <Ellipse  Fill="#FFFF8AAA" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="3" Grid.Row="1" Click="Color_Click" Tag="Led,#FFAD4650">
+                                <Grid/>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="1" Grid.Row="3" Click="Color_Click" Tag="Led,#FF777171">
+                                <Grid>
+                                    <Ellipse  Fill="#FF777171" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="3" Grid.Row="7" Click="Color_Click" Tag="Led,#FF3A0C69">
+                                <Grid>
+                                    <Ellipse  Fill="#FF3A0C69" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="3" Grid.Row="3" Click="Color_Click"  Tag="Led,#FF90418D" Background="#FF90418D">
+                                <Grid>
+                                    <Ellipse  Fill="#FF90418D" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="3" Grid.Row="1" Click="Color_Click"  Tag="Led,#FFC7519E">
+                                <Grid>
+                                    <Ellipse  Fill="#FFC7519E" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button" >
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="3" Grid.Row="5" Click="Color_Click"  Tag="Led,#FF631447">
+                                <Grid>
+                                    <Ellipse  Fill="#FF631447" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="5" Grid.Row="5" Click="Color_Click"  Tag="Led,#FF1F2186" Background="#FF1F2186">
+                                <Grid>
+                                    <Ellipse  Fill="#FF1F2186" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Grid.Column="5" Grid.Row="7" Click="Color_Click"  Tag="Led,#FF0F1061" Background="#FF0F1061">
+                                <Grid>
+                                    <Ellipse  Fill="#FF0F1061" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+
+                            <Button Grid.Column="1" Grid.Row="5" Click="Color_Click"  Tag="Led,#FF6F0404">
+                                <Grid>
+                                    <Ellipse  Fill="#FF6F0404" />
+
+                                </Grid>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                        </Grid>
+
+
+
+
+
+                    </Grid>
+
+
+                </TabItem>
+                <TabItem Header="ANİMASYON">
+                    <Grid>
+                        <Grid.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black"/>
+                                <GradientStop Color="#FF9132A2" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="1*"/>
+
+
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="10*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="10*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Content="GEÇİŞ SURESİ:" Grid.Row="1" Grid.Column="1" Foreground="White" FontFamily="Arial Black" BorderBrush="#FFE41919">
+                            <Label.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black"/>
+                                    <GradientStop Color="#FF36053E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Label.Background>
+                        </Label>
+                        <Slider x:Name="slider_animasyon_gecis" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" BorderBrush="#FF64226F" ValueChanged="slider_animasyon_gecis_ValueChanged">
+                            <Slider.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black"/>
+                                    <GradientStop Color="#FF36053E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Slider.Background>
+                        </Slider>
+                        <TextBox x:Name="txt_animasyon_gecis_sure" Text="0.5" Grid.Row="1" Grid.Column="4" TextChanged="txt_animasyon_gecis_sure_TextChanged"/>
+
+                        <Button x:Name="btn_iki" Content="SIRASI İLE YAK" Grid.Column="1" Grid.Row="3" Click="btn_iki_Click" Foreground="White" FontFamily="Segoe UI Black">
+                            <Button.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="White" Offset="1"/>
+                                    <GradientStop Color="White" Offset="0"/>
+                                    <GradientStop Color="#FF1D6B62" Offset="0.496"/>
+                                    <GradientStop Color="#FFA895E0" Offset="0.285"/>
+                                    <GradientStop Color="#FFB0ABE6" Offset="0.769"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="btn_reset" Content="SIFIRLA" Grid.Column="7" Grid.Row="5" Foreground="White" FontFamily="Segoe UI Black" Click="btn_reset_Click">
+                            <Button.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black"/>
+                                    <GradientStop Color="White" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="btn_dort" Content="YAZI" Grid.Column="5" Grid.Row="3" Click="btn_dort_Click" Foreground="White" FontFamily="Segoe UI Black">
+                            <Button.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF44285B"/>
+                                    <GradientStop Color="#FF008866" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="btn_bes" Content="RENKLER(512)" Grid.Column="1" Grid.Row="5" Click="btn_bes_Click" Foreground="White" FontFamily="Segoe UI Black">
+                            <Button.Background>
+                                <RadialGradientBrush>
+                                    <GradientStop Color="#FFFF9718" Offset="1"/>
+                                    <GradientStop Color="White" Offset="0"/>
+                                    <GradientStop Color="#FFFFF500" Offset="0.884"/>
+                                    <GradientStop Color="#FF37FF00" Offset="0.736"/>
+                                    <GradientStop Color="#FF00FF4A" Offset="0.616"/>
+                                    <GradientStop Color="#FF009CFF" Offset="0.525"/>
+                                    <GradientStop Color="#FF1300FF" Offset="0.421"/>
+                                    <GradientStop Color="#FFCE00FF" Offset="0.289"/>
+                                    <GradientStop Color="#FFFF0879" Offset="0.215"/>
+                                    <GradientStop Color="#FEFF0E3A" Offset="0.128"/>
+                                </RadialGradientBrush>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="btn_alti" Content="SU DAMLASI" Grid.Column="3" Grid.Row="5" Click="btn_alti_Click" FontFamily="Segoe UI Black" BorderBrush="#FF4210CE" Foreground="White">
+                            <Button.Background>
+                                <RadialGradientBrush>
+                                    <GradientStop Color="#FF3700FF" Offset="0.988"/>
+                                    <GradientStop Color="#FFB79BE2" Offset="0"/>
+                                    <GradientStop Color="#FF4DC9CC" Offset="0.512"/>
+                                    <GradientStop Color="#FF6F70E8" Offset="0.736"/>
+                                    <GradientStop Color="#FF1BE6CE" Offset="0.186"/>
+                                </RadialGradientBrush>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="btn_yedi" Content="RAİNBOW" Grid.Column="5" Grid.Row="5" Click="btn_yedi_Click" Foreground="White" FontFamily="Segoe UI Black">
+                            <Button.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFF92F2F" Offset="1"/>
+                                    <GradientStop Color="#FF1A1ABB" Offset="0.05"/>
+                                    <GradientStop Color="#FF48D048" Offset="0.4"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="btn_sekiz" Content="EMOJİ" Grid.Column="3" Grid.Row="3" Click="btn_sekiz_Click" Foreground="White" FontFamily="Segoe UI Black">
+                            <Button.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black"/>
+                                    <GradientStop Color="#FFFFF500" Offset="1"/>
+                                    <GradientStop Color="#FF06FF65" Offset="0"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                            <Button.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black"/>
+                                    <GradientStop Color="#FF771A1A" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Button.BorderBrush>
+                        </Button>
+                        <Grid Grid.Row="1" Grid.Column="7">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="10*"/>
+                            </Grid.RowDefinitions>
+                            <RadioButton x:Name="rdbtn_bayrak_dalga" Content="Dalgalandır" Grid.Row="0" Foreground="White" Click="rdbtn_bayrak_dalga_Click" />
+                            <RadioButton x:Name="rdbtn_bayrak_kırp" Content="Aç-Kapa" Grid.Row="2" Foreground="White" Click="rdbtn_bayrak_kırp_Click" />
+
+                        </Grid>
+
+                        <Button x:Name="btn_dokuz" Content="BAYRAK" Grid.Column="7" Grid.Row="3" Click="btn_dokuz_Click" Foreground="White" FontFamily="Segoe UI Black" BorderBrush="White">
+                            <Button.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="White"/>
+                                    <GradientStop Color="Red" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                    </Grid>
+                </TabItem>
+
+
+                <TabItem Header="AYARLAR" Grid.Row="0" Grid.Column="0">
+                    <Grid>
+                        <Grid.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF0C0D1F"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*"/>
+
+
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="4*"/>
+
+
+
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="4*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="4*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="4*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="4*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="4*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="4*"/>
+
+
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="15*"/>
+                                <RowDefinition Height="5*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Row="1" Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label x:Name="lbl_com_secimi" Content="COM" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Foreground="White" FontFamily="Segoe UI Black"/>
+
+                            </Grid>
+                            <Grid Grid.Row="1" Grid.Column="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                </Grid.ColumnDefinitions>
+                                <ComboBox x:Name="COMselect" Grid.Column="0"/>
+                                <Button x:Name="COMconnect" Content="SEÇ" Grid.Column="2" HorizontalAlignment="Left" Width="52" Click="COMconnect_Click" Foreground="White" FontFamily="Segoe UI Black" BorderBrush="#FFC79061" Background="#FF292929"/>
+                            </Grid>
+                            <Label Content="Ficture name" Grid.Row="3" Grid.Column="1" FontFamily="Segoe UI Black" Foreground="White"/>
+                            <Label Content="Of Channels" Grid.Row="5" Grid.Column="1" Foreground="White" FontFamily="Segoe UI Black"/>
+                            <Label Content="Group" Grid.Row="7" Grid.Column="1" FontFamily="Segoe UI Black" Foreground="White"/>
+                            <Label Content="Pixel Sayısı:" Grid.Row="9" Grid.Column="1" Foreground="White" FontFamily="Segoe UI Black"/>
+                            <TextBox x:Name="txt_pixel_sayisi" Grid.Row="9" Grid.Column="3" />
+                            <Button x:Name="AYARLA" Content="💡 Create" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="3" Background="#FF292929" Click="ayarla_click" Foreground="White" FontFamily="Segoe UI Black"/>
+
+                            <TextBox x:Name="NewFixtureName" Text="Generic Par64" Grid.Row="3" Grid.Column="3"/>
+                            <TextBox  x:Name="NewFixtureNChannels" Text="3" Grid.Row="5" Grid.Column="3"/>
+                            <TextBox x:Name="NewFixtureGroups" Text="All,Led" Grid.Row="7" Grid.Column="3"/>
+                            <DataGrid x:Name="data_grid" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1" Grid.Row="13" Grid.ColumnSpan="3" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" />
+
+                        </Grid>
+
+
+
+                    </Grid>
+
+
+
+
+
+                </TabItem>
+
+
+            </TabControl>
+
+        </Grid>
+
+
+
+
+
+    </Grid>
+</Window>

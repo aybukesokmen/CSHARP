@@ -1,0 +1,171 @@
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\dmx_control.exe.config
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\dmx_control.exe
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\dmx_control.pdb
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\dmx_control.csproj.SuggestedBindingRedirects.cache
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\MainWindow.g.cs
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\App.g.cs
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\dmx_control_MarkupCompile.cache
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\dmx_control_MarkupCompile.lref
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\MainWindow.baml
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\dmx_control.g.resources
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\dmx_control.Properties.Resources.resources
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\dmx_control.csproj.GenerateResource.cache
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\dmx_control.csproj.CoreCompileInputs.cache
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\dmx_control.exe
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\dmx_control.pdb
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\SYRIS485.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\SYRIS485.xml
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\dmx_control.csproj.CopyComplete
+D:\DMX_Control_Light_Project\dmx_control\obj\Debug\dmx_control.csproj.AssemblyReference.cache
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.Model.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.MsSql.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.MySql.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.Npgsql.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.Oracle.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.Protobuf.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.Schema.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.SQLite.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Encryption.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Incubation.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.ServiceProxy.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Yaml.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\ColorPickerLib.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\NumericUpDownLib.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\System.Drawing.Common.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.xml
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.xml
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.Model.xml
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.MsSql.xml
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Data.Schema.xml
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Encryption.xml
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Incubation.xml
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.ServiceProxy.xml
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\Bam.Net.Yaml.xml
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\System.Drawing.Common.xml
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\cs-CZ\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\de-DE\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\es-ES\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\fr-FR\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\hi\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\id-ID\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\it-IT\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\ja-JP\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\nl-NL\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\zh-CHS\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\dmx_control\bin\Debug\zh-CHT\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\dmx_control.csproj.AssemblyReference.cache
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\dmx_control.csproj.SuggestedBindingRedirects.cache
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\MainWindow.g.cs
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\App.g.cs
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\dmx_control_MarkupCompile.cache
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\dmx_control_MarkupCompile.lref
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\MainWindow.baml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\dmx_control.g.resources
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\dmx_control.pdb
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\dmx_control.exe
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\dmx_control.pdb
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.Model.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.MsSql.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.MySql.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.Npgsql.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.Oracle.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.Protobuf.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.Schema.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.SQLite.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Encryption.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Incubation.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.ServiceProxy.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Yaml.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\ColorPickerLib.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\NumericUpDownLib.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\SYRIS485.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\System.Drawing.Common.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.xml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.xml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.Model.xml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.MsSql.xml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Data.Schema.xml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Encryption.xml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Incubation.xml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.ServiceProxy.xml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\Bam.Net.Yaml.xml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\SYRIS485.xml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\System.Drawing.Common.xml
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\cs-CZ\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\de-DE\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\es-ES\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\fr-FR\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\hi\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\id-ID\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\it-IT\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\ja-JP\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\nl-NL\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\zh-CHS\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\zh-CHT\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\dmx_control.Properties.Resources.resources
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\dmx_control.csproj.GenerateResource.cache
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\dmx_control.csproj.CoreCompileInputs.cache
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\dmx_control.csproj.CopyComplete
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\obj\Debug\dmx_control.exe
+D:\DMX_Control_Light_Project\versiyom\Yeni klasör\dmx_control\bin\Debug\dmx_control.exe.config
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.Model.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.MsSql.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.MySql.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.Npgsql.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.Oracle.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.Protobuf.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.Schema.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.SQLite.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Encryption.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Incubation.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.ServiceProxy.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Yaml.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\ColorPickerLib.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\NumericUpDownLib.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\SYRIS485.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\System.Drawing.Common.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.xml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.xml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.Model.xml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.MsSql.xml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Data.Schema.xml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Encryption.xml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Incubation.xml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.ServiceProxy.xml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Bam.Net.Yaml.xml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\SYRIS485.xml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\System.Drawing.Common.xml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\cs-CZ\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\de-DE\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\es-ES\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\fr-FR\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\hi\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\id-ID\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\it-IT\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\ja-JP\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\nl-NL\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\zh-CHS\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\zh-CHT\ColorPickerLib.resources.dll
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\dmx_control.csproj.SuggestedBindingRedirects.cache
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\MainWindow.g.cs
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\App.g.cs
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\MainWindow.baml
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\dmx_control.Properties.Resources.resources
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\dmx_control.csproj.GenerateResource.cache
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\dmx_control.csproj.CoreCompileInputs.cache
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\dmx_control.csproj.CopyComplete
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Easy DMX Master.exe.config
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Easy DMX Master.exe
+D:\DMX_Control_Light_Project\versiyom\dmx_control\bin\Debug\Easy DMX Master.pdb
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\dmx_control.csproj.AssemblyReference.cache
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\Easy DMX Master_MarkupCompile.cache
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\Easy DMX Master_MarkupCompile.lref
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\Easy DMX Master.g.resources
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\Easy DMX Master.exe
+D:\DMX_Control_Light_Project\versiyom\dmx_control\obj\Debug\Easy DMX Master.pdb
