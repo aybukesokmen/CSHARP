@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stm32_tek_veri_okuma", "stm32_tek_veri_okuma.csproj", "{DF4E6AE2-4251-442B-8D60-9F37D31DEA51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF4E6AE2-4251-442B-8D60-9F37D31DEA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4E6AE2-4251-442B-8D60-9F37D31DEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4E6AE2-4251-442B-8D60-9F37D31DEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4E6AE2-4251-442B-8D60-9F37D31DEA51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90D139C1-8F21-4CA4-BCAD-DD9839BDDE38}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+D:\visual_studio\stm32_tek_veri_okuma\bin\Debug\stm32_tek_veri_okuma.exe.config
+D:\visual_studio\stm32_tek_veri_okuma\bin\Debug\stm32_tek_veri_okuma.exe
+D:\visual_studio\stm32_tek_veri_okuma\bin\Debug\stm32_tek_veri_okuma.pdb
+D:\visual_studio\stm32_tek_veri_okuma\obj\Debug\stm32_tek_veri_okuma.csproj.AssemblyReference.cache
+D:\visual_studio\stm32_tek_veri_okuma\obj\Debug\stm32_tek_veri_okuma.Form1.resources
+D:\visual_studio\stm32_tek_veri_okuma\obj\Debug\stm32_tek_veri_okuma.Properties.Resources.resources
+D:\visual_studio\stm32_tek_veri_okuma\obj\Debug\stm32_tek_veri_okuma.csproj.GenerateResource.cache
+D:\visual_studio\stm32_tek_veri_okuma\obj\Debug\stm32_tek_veri_okuma.csproj.CoreCompileInputs.cache
+D:\visual_studio\stm32_tek_veri_okuma\obj\Debug\stm32_tek_veri_okuma.exe
+D:\visual_studio\stm32_tek_veri_okuma\obj\Debug\stm32_tek_veri_okuma.pdb
+D:\visual_studio\stm32_tek_veri_okuma\obj\Debug\stm32_tek_veri_okuma.csproj.SuggestedBindingRedirects.cache
