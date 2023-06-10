@@ -1,0 +1,17 @@
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\bin\Debug\kablo_kesme_panel.exe.config
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\bin\Debug\kablo_kesme_panel.exe
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\bin\Debug\kablo_kesme_panel.pdb
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\kablo_kesme_panel.csproj.AssemblyReference.cache
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\kablo_kesme_panel.csproj.SuggestedBindingRedirects.cache
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\MainWindow.g.cs
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\App.g.cs
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\kablo_kesme_panel_MarkupCompile.cache
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\kablo_kesme_panel_MarkupCompile.lref
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\MainWindow.baml
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\kablo_kesme_panel.g.resources
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\kablo_kesme_panel.Properties.Resources.resources
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\kablo_kesme_panel.csproj.GenerateResource.cache
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\kablo_kesme_panel.csproj.CoreCompileInputs.cache
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\kablo_kesme_panel.exe
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\kablo_kesme_panel.pdb
+D:\visual_studio\Yeni klasör\wpf\kablo_kesme_panel\obj\Debug\kablo_kesme_panel.csproj.ResolveComReference.cache

@@ -1,0 +1,432 @@
+﻿<Window x:Name="Kablo_Kesme" x:Class="kablo_kesme_panel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kablo_kesme_panel"
+      
+        mc:Ignorable="d"
+        Title="Kablo_Kesme_Panel" Height="450" Width="800" ResizeMode="CanResize" WindowState="Normal" Closed="Kablo_Kesme_Closed">
+
+
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Rectangle Fill="#FFE4DA97" Grid.Row="2"/>
+            <Rectangle Fill="#FFE4DA97" Grid.Row="2" Grid.Column="1"/>
+            <Rectangle Fill="#FFE4DA97" Grid.Row="2" Grid.Column="2"/>
+            <ComboBox  x:Name="cmbbx_com" Grid.Column="2" Grid.Row="4" />
+            <ComboBox x:Name="cmbbx_baudrate" Grid.Column="2" Grid.Row="6"   />
+            <ComboBox x:Name="cmbbx_parity" Grid.Column="2" Grid.Row="8"   />
+            <ComboBox x:Name="cmbbx_data" Grid.Column="2" Grid.Row="10"   />
+            <ComboBox x:Name="cmbbx_stop_bits" Grid.Column="2" Grid.Row="12"   />
+            <Label Content="COM" Grid.Row="4"/>
+            <Label Content="BAUDRATE"  Grid.Row="6" />
+            <Label Content="PARITYBITS"  Grid.Row="8"  />
+            <Label Content="DATABITS"  Grid.Row="10"  />
+            <Label Content="STOPBITS" Grid.Row="12" />
+            <Button x:Name="btn_baglanti_Ac" Content="BAGLANTI AC"  Grid.Row="14" Click="btn_baglanti_Ac_Click" />
+            <Button x:Name="btn_baglanti_kapa" Content="BAGLANTI KAPA"  Grid.Row="14"  Grid.Column="2" Click="btn_baglanti_kapa_Click"/>
+            <Label Content="COM AYARLA"  Grid.Row="2" Grid.ColumnSpan="3" />
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="3*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="lbl_dosya_Sec" Grid.Column="1" Content="Dosya Seç:"  Grid.Row="1" FontSize="10" />
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="3*"/>
+
+                </Grid.RowDefinitions>
+                <TextBox x:Name="txt_dosya_ac"  Grid.Row="1"  Text="TextBox"  />
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="3*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnOpenFile" Grid.Column="1" Content="..."  Click="btnOpenFile_Click"  Grid.RowSpan="2" />
+
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="7*"/>
+                    <RowDefinition Height="3*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_gonder" Grid.Column="1" Content="Gonder"  Grid.Row="1" Click="btn_gonder_Click" />
+
+            </Grid>
+
+            <Grid Grid.Row="7" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="3*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_ayar_baslat" Grid.Column="1" Content="AYAR BASLAT"  Grid.Row="1" />
+
+            </Grid>
+
+            <Grid Grid.Row="7" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="3*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_ayar_duraklat" Grid.Column="1" Content="AYAR DURAKLAT" Grid.Row="1" />
+
+            </Grid>
+
+            <Grid Grid.Row="7" Grid.Column="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="3*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_ayar_durdur" Grid.Column="1" Content="AYAR DURDUR"  Grid.Row="1" />
+            </Grid>
+            <Rectangle Fill="#FF71A574" Grid.Row="1" Grid.Column="1"/>
+            <Rectangle Fill="#FF71A574" Grid.Row="1" Grid.Column="2"/>
+            <Rectangle Fill="#FF71A574" Grid.Row="1" Grid.Column="3"/>
+            <Rectangle Fill="#FF71A574" Grid.Row="1" Grid.Column="4"/>
+            <Rectangle Fill="#FF71A574" Grid.Row="1" Grid.Column="5"/>
+            <Label Grid.Column="1" Content="AYAR YUKLE"  Grid.Row="1" Grid.ColumnSpan="5" />
+            <DataGrid x:Name="data_grid" Grid.Column="3" Grid.Row="4" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.ColumnSpan="3"  Grid.RowSpan="3"  />
+
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="3*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_eksi" Grid.Column="1" Content="-" Grid.Row="1" Click="btn_eksi_Click" />
+
+
+            </Grid>
+
+
+            <Grid Grid.Row="5" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="3*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_tam_tur" Grid.Column="1" Content="TAM TUR"  Grid.Row="1" Click="btn_tam_tur_Click_1"/>
+
+
+
+            </Grid>
+
+            <Grid Grid.Row="7" Grid.Column="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="3*"/>
+
+                    <RowDefinition Height="1*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="txt_istenen_tur" Grid.Column="1" Grid.Row="0"  Text="TextBox"  Background="#FFFDFDFD" BorderBrush="#FF373940" />
+                <Button Grid.Column="1" Content="Button" Grid.Row="2"/>
+
+
+
+
+            </Grid>
+
+            <Grid Grid.Row="3" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="3*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <ProgressBar x:Name="progresbar_1" Grid.Column="1"   Grid.Row="1"   />
+
+
+            </Grid>
+
+            <Grid Grid.Row="3" Grid.Column="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="3*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_arti" Grid.Column="1" Content="+"  Grid.Row="1" Click="btn_arti_Click" />
+
+
+
+            </Grid>
+
+            <Grid Grid.Row="7" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+
+                </Grid.RowDefinitions>
+                <Label x:Name="lbl_index" Content="index" Grid.RowSpan="2" />
+                <Button x:Name="btn_bekle" Content="Bekle" Grid.Row="2" Click="btn_bekle_Click" />
+
+            </Grid>
+
+
+            <Grid Grid.Row="7" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+
+                </Grid.RowDefinitions>
+                <Label Content="İstenilen Tur:" Grid.Row="0"  Grid.RowSpan="2" FontSize="9"   />
+                <Label x:Name="lbl_saniye" Content="saniye"  Grid.Row="2" FontSize="8" />
+
+            </Grid>
+
+
+
+            <Rectangle Fill="#FF3B9294" Grid.Row="1" Grid.Column="1"/>
+            <Rectangle Fill="#FF3B9294" Grid.Row="1" Grid.Column="2"/>
+            <Rectangle Fill="#FF3B9294" Grid.Row="1" Grid.Column="3"/>
+            <Rectangle Fill="#FF3B9294" Grid.Row="1" Grid.Column="4"/>
+            <Rectangle Fill="#FF3B9294" Grid.Row="1" Grid.Column="5"/>
+
+            <DatePicker x:Name="date_picker" Grid.Column="3" Grid.ColumnSpan="3" FontSize="9" />
+            <TextBox x:Name="txt_dosya_Ad_2"  Text="TextBox"  Grid.Row="5" Grid.Column="1" />
+            <TextBox x:Name="txtbox_datagelen" Grid.Column="5"  Grid.Row="5" Text="" Background="Black" Foreground="#FF49B523"   />
+
+
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Fill="#FFA4E892" Grid.Row="0" Grid.Column="0"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="0" Grid.Column="1"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="0" Grid.Column="2"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="0" Grid.Column="3"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="0" Grid.Column="4"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="1" Grid.Column="0"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="2" Grid.Column="0"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="3" Grid.Column="0"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="4" Grid.Column="0"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="4" Grid.Column="1"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="4" Grid.Column="2"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="4" Grid.Column="3"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="4" Grid.Column="4"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="1" Grid.Column="4"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="2" Grid.Column="4"/>
+            <Rectangle Fill="#FFA4E892" Grid.Row="3" Grid.Column="4"/>
+            <Label Grid.Column="1" Content="Baglanti Durumu:"  Grid.Row="1" />
+            <Label Grid.Column="1" Content="Son Mesaj Zamanı:"  Grid.Row="3"/>
+            <Label x:Name="lbl_mesaj_zaman" Grid.Column="3" Content="---"  Grid.Row="3" />
+            <Label x:Name="lbl_baglanti_durum" Grid.Column="3" Content="---"  Grid.Row="1" Background="White" />
+
+
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="9*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btn_acil_Stop" Grid.Column="1" Content="ACIL STOP" Margin="0,36,-217,36" Grid.RowSpan="3" Background="#FFD82020" Foreground="White" FontSize="36" FontFamily="Arial Black" Click="btn_acil_Stop_Click" />
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lbl_control" Content=""  />
+
+        </Grid>
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>
